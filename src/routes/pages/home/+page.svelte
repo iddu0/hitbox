@@ -38,7 +38,6 @@
     border: 2px solid #00ff00;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
-    margin-top: auto; 
 }
 
     .icon {
@@ -105,8 +104,6 @@
    <h1 class="pikl-apptitle"><span class="jam jam-home"></span>Home</h1>
 
 <div class="container">
-    <div class="icon"></div>
-    <h1 class="pikl-apptitle">PickleBox</h1>
     <p class="welcome-message">Welcome to Pickle Box</p>
     <p class="announcement">{announcement}</p>
 </div>
