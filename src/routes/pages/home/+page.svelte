@@ -124,6 +124,7 @@
     <span class="jam jam-home"></span>
     <span>Home</span>
 </div>
+
 <div class="container">
     <div class="icon"></div>
     <h1 class="pikl-apptitle">PickleBox</h1>
