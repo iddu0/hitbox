@@ -26,18 +26,7 @@
 </script>
 
 <style>
-    :global(body) {
-        background-color: transparent;
-        color: #ffffff;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+   
 
     .container {
         width: 90%;
@@ -55,13 +44,7 @@
 
    
 
-    .icon {
-        width: 80px;
-        height: 80px;
-        background: url('https://e7.pngegg.com/pngimages/380/764/png-clipart-paper-box-computer-icons-symbol-random-icons-miscellaneous-angle-thumbnail.png') no-repeat center;
-        background-size: contain;
-        margin-bottom: 10px;
-    }
+    
 
     .pikl-apptitle {
         font-size: 3rem;
