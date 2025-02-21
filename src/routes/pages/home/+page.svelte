@@ -50,11 +50,13 @@
 
    
 
-    .welcome-message {
+   .welcome-message {
         font-size: 1.8rem;
         margin-top: 10px;
         color: #16A34A;
         transition: transform 0.3s ease-in-out;
+		font-weight: lighter;
+		text-shadow: 1px 1px 2px ;
     }
 
     .welcome-message:hover {
