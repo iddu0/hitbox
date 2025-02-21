@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid #00ff00;
+    border: 2px solid #16A34A;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
 }
