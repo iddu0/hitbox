@@ -1,28 +1,47 @@
 <script>
     import '../../cdn/jam/jam.min.css';
     import { onMount } from 'svelte';
+
     onMount(async () => {
         if ("serviceWorker" in navigator) {
           const registrations = await navigator.serviceWorker.getRegistrations();
           if (registrations.length <= 0) {
-            if ("serviceWorker" in navigator) {
-              navigator.serviceWorker
-                .register("/sw.js", {
-                  scope: "/~uv/"
-                })
-                .then(() => {
-                  location.reload();
-                });
-            }
+            navigator.serviceWorker.register("/sw.js", { scope: "/~uv/" })
+              .then(() => location.reload());
           } else {
-            if ("serviceWorker" in navigator) {
-              navigator.serviceWorker.register("/sw.js", {
-                scope: "/~uv/"
-              });
-            }
+            navigator.serviceWorker.register("/sw.js", { scope: "/~uv/" });
           }
         }
     });
 </script>
 
-<h1 class="pikl-apptitle"><span class="jam jam-home"></span>Home</h1>
+<style>
+    :global(body) {
+        background-color: #1b3a2b;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pikl-apptitle {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .welcome-message {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+</style>
+
+<h1 class="pikl-apptitle">
+    <span class="jam jam-home"></span> Home
+</h1>
+<p class="welcome-message">Welcome to Pickle Box</p>
