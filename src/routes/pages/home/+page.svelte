@@ -46,12 +46,30 @@
         padding: 20px;
         border-radius: 15px;
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        width: 80px;
+        height: 80px;
+        background: url('https://joaawd.github.io/picklebox/client/cdn/pickle.svg') no-repeat center;
+        background-size: contain;
+        margin-bottom: 10px;
     }
 
     .pikl-apptitle {
         font-size: 3rem;
         font-weight: bold;
         text-shadow: 0 0 10px #00ff00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 2px solid #00ff00;
+        padding: 10px;
+        border-radius: 10px;
     }
 
     .welcome-message {
@@ -59,6 +77,9 @@
         margin-top: 10px;
         animation: intenseGlow 1.5s infinite alternate;
         transition: transform 0.3s ease-in-out;
+        border: 2px solid #00ff00;
+        padding: 8px;
+        border-radius: 10px;
     }
 
     .welcome-message:hover {
@@ -71,6 +92,9 @@
         color: #ffcc00;
         text-shadow: 0 0 8px #ffcc00;
         font-weight: bold;
+        border: 2px solid #ffcc00;
+        padding: 8px;
+        border-radius: 10px;
     }
 
     @keyframes intenseGlow {
@@ -86,6 +110,7 @@
 </style>
 
 <div class="container">
+    <div class="icon"></div>
     <h1 class="pikl-apptitle">PickleBox</h1>
     <p class="welcome-message">Welcome to Pickle Box</p>
     <p class="announcement">{announcement}</p>
