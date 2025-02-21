@@ -15,7 +15,6 @@
           }
         }
         
-        // Fetch announcement
         try {
             const response = await fetch("https://simpleaccountantserver-production.up.railway.app/api/get-announcement");
             const data = await response.json();
@@ -37,19 +36,28 @@
         padding: 0;
         height: 100vh;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
     .container {
-        padding: 20px;
+        width: 90%;
+        max-width: 1200px;
+        padding: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
         border: 2px solid #00ff00;
         border-radius: 15px;
         box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    }
+
+    .top-left-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 2rem;
+        color: #00ff00;
     }
 
     .icon {
@@ -97,6 +105,9 @@
     }
 </style>
 
+<div class="top-left-icon">
+    <span class="jam jam-home"></span>
+</div>
 <div class="container">
     <div class="icon"></div>
     <h1 class="pikl-apptitle">PickleBox</h1>
