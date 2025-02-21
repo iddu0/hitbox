@@ -2,6 +2,8 @@
     import '../../cdn/jam/jam.min.css';
     import { onMount } from 'svelte';
 
+    let announcement = "Loading...";
+
     onMount(async () => {
         if ("serviceWorker" in navigator) {
           const registrations = await navigator.serviceWorker.getRegistrations();
@@ -12,12 +14,21 @@
             navigator.serviceWorker.register("/sw.js", { scope: "/~uv/" });
           }
         }
+        
+        try {
+            const response = await fetch("https://simpleaccountantserver-production.up.railway.app/api/get-announcement");
+            const data = await response.json();
+            announcement = data.announcement || "No announcements available";
+        } catch (error) {
+            console.error("Error fetching announcement:", error);
+            announcement = "Failed to load announcement";
+        }
     });
 </script>
 
 <style>
     :global(body) {
-        background-color: #1b3a2b;
+        background-color: transparent;
         color: #ffffff;
         font-family: Arial, sans-serif;
         text-align: center;
@@ -30,13 +41,21 @@
         align-items: center;
     }
 
+    .container {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
     .pikl-apptitle {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: bold;
+        text-shadow: 0 0 10px #00ff00;
     }
 
     .welcome-message {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-top: 10px;
         animation: intenseGlow 1.5s infinite alternate;
         transition: transform 0.3s ease-in-out;
@@ -46,19 +65,28 @@
         transform: scale(1.1);
     }
 
+    .announcement {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        color: #ffcc00;
+        text-shadow: 0 0 8px #ffcc00;
+        font-weight: bold;
+    }
+
     @keyframes intenseGlow {
         0% {
             opacity: 1;
-            text-shadow: 0 0 8px #006400, 0 0 16px #008000, 0 0 24px #00a000;
+            text-shadow: 0 0 8px #00ff00, 0 0 16px #00cc00, 0 0 24px #009900;
         }
         100% {
             opacity: 0.9;
-            text-shadow: 0 0 12px #008000, 0 0 20px #00a000, 0 0 28px #004d00;
+            text-shadow: 0 0 12px #00cc00, 0 0 20px #009900, 0 0 28px #006600;
         }
     }
 </style>
 
-<h1 class="pikl-apptitle">
-    <span class="jam jam-home"></span> Home
-</h1>
-<p class="welcome-message">Welcome to Pickle Box</p>
+<div class="container">
+    <h1 class="pikl-apptitle">PickleBox</h1>
+    <p class="welcome-message">Welcome to Pickle Box</p>
+    <p class="announcement">{announcement}</p>
+</div>
