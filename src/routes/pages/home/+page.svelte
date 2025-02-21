@@ -96,7 +96,6 @@
     }
 </style>
 
-<div class="top-left-icon">
     <span class="jam jam-home"></span>
     <span>Home</span>
 </div>
