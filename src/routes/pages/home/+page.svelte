@@ -29,7 +29,7 @@
 
 
 .container {
-    width: 90%;
+    width: 120%;
     max-width: 1200px;
     padding: 40px;
     display: flex;
