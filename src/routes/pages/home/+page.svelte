@@ -58,6 +58,9 @@
         left: 20px;
         font-size: 2rem;
         color: #00ff00;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .icon {
@@ -107,6 +110,7 @@
 
 <div class="top-left-icon">
     <span class="jam jam-home"></span>
+    <span>Home</span>
 </div>
 <div class="container">
     <div class="icon"></div>
