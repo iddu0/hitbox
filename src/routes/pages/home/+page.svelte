@@ -39,16 +39,21 @@
         font-size: 1.5rem;
         margin-top: 10px;
         animation: intenseGlow 1.5s infinite alternate;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .welcome-message:hover {
+        transform: scale(1.1);
     }
 
     @keyframes intenseGlow {
         0% {
             opacity: 1;
-            text-shadow: 0 0 8px #ff00ff, 0 0 16px #ff00ff, 0 0 24px #8000ff;
+            text-shadow: 0 0 8px #006400, 0 0 16px #008000, 0 0 24px #00a000;
         }
         100% {
             opacity: 0.9;
-            text-shadow: 0 0 12px #ff00ff, 0 0 20px #8000ff, 0 0 28px #4b0082;
+            text-shadow: 0 0 12px #008000, 0 0 20px #00a000, 0 0 28px #004d00;
         }
     }
 </style>
