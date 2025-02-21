@@ -24,8 +24,9 @@
         }
     });
 </script>
-
+<h1 class="pikl-apptitle"><span class="jam jam-home"></span>Home</h1>
 <style>
+
    
     .container {
         width: 90%;
