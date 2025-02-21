@@ -38,17 +38,17 @@
     .welcome-message {
         font-size: 1.5rem;
         margin-top: 10px;
-        animation: flicker 1.5s infinite alternate;
+        animation: intenseGlow 1.5s infinite alternate;
     }
 
-    @keyframes flicker {
+    @keyframes intenseGlow {
         0% {
             opacity: 1;
-            text-shadow: 0 0 5px #ff6600, 0 0 10px #ff3300, 0 0 15px #ff0000;
+            text-shadow: 0 0 8px #ff00ff, 0 0 16px #ff00ff, 0 0 24px #8000ff;
         }
         100% {
-            opacity: 0.8;
-            text-shadow: 0 0 10px #ff3300, 0 0 15px #ff0000, 0 0 20px #990000;
+            opacity: 0.9;
+            text-shadow: 0 0 12px #ff00ff, 0 0 20px #8000ff, 0 0 28px #4b0082;
         }
     }
 </style>
