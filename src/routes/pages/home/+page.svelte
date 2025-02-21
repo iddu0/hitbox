@@ -53,7 +53,7 @@
     .welcome-message {
         font-size: 1.8rem;
         margin-top: 10px;
-        animation: intenseGlow 1.5s infinite alternate;
+        color: #16A34A;
         transition: transform 0.3s ease-in-out;
     }
 
@@ -69,17 +69,7 @@
         font-weight: bold;
     }
 
-    @keyframes intenseGlow {
-        0% {
-            opacity: 1;
-            text-shadow: 0 0 8px #00ff00, 0 0 16px #00cc00, 0 0 24px #009900;
-        }
-        100% {
-            opacity: 0.9;
-            text-shadow: 0 0 12px #00cc00, 0 0 20px #009900, 0 0 28px #006600;
-        }
-    }
-
+   
 
 .pikl-apptitle {
     position: absolute;
