@@ -26,19 +26,7 @@
 </script>
 
 <style>
- :global(body) {
-    background-color: transparent;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .container {
     width: 90%;
