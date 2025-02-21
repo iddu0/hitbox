@@ -26,19 +26,7 @@
 </script>
 
 <style>
-    :global(body) {
-        background-color: transparent;
-        color: #ffffff;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+   
     .container {
         width: 90%;
         max-width: 1200px;
@@ -51,37 +39,7 @@
         box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
     }
 
-    .top-left-icon {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        font-size: 2rem;
-        color: #00ff00;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .top-left-icon .jam {
-        border: 2px solid #00ff00;
-        background-color: #003300;
-        padding: 5px;
-        border-radius: 5px;
-        color: #00ff00;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-    }
-
-    .icon {
-        width: 80px;
-        height: 80px;
-        background: url('/mnt/data/image.png') no-repeat center;
-        background-size: contain;
-        margin-bottom: 10px;
-    }
+  
 
     .pikl-apptitle {
         font-size: 3rem;
