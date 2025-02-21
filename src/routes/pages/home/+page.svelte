@@ -39,7 +39,6 @@
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
     margin-top: auto; 
-    margin-bottom: 20px; 
 }
 
     .icon {
