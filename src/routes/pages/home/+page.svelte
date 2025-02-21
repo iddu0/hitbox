@@ -20,7 +20,6 @@
             const data = await response.json();
             announcement = data.announcement || "No announcements available";
         } catch (error) {
-            console.error("Error fetching announcement:", error);
             announcement = "Failed to load announcement";
         }
     });
@@ -61,6 +60,19 @@
         display: flex;
         align-items: center;
         gap: 10px;
+    }
+
+    .top-left-icon .jam {
+        border: 2px solid #00ff00;
+        background-color: #003300;
+        padding: 5px;
+        border-radius: 5px;
+        color: #00ff00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
     }
 
     .icon {
