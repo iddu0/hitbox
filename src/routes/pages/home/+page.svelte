@@ -59,11 +59,7 @@
         margin-bottom: 10px;
     }
 
-    .pikl-apptitle {
-        font-size: 3rem;
-        font-weight: bold;
-        text-shadow: 0 0 10px #00ff00;
-    }
+   
 
     .welcome-message {
         font-size: 1.8rem;
@@ -96,8 +92,7 @@
     }
 </style>
 
-    <span class="jam jam-home"></span>
-    <span>Home</span>
+   <h1 class="pikl-apptitle"><span class="jam jam-home"></span>Home</h1>
 
 <div class="container">
     <div class="icon"></div>
