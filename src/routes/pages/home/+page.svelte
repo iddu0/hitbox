@@ -51,30 +51,6 @@
         box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
     }
 
-    .top-left-icon {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        font-size: 2rem;
-        color: #00ff00;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .top-left-icon .jam {
-        border: 2px solid #00ff00;
-        background-color: #003300;
-        padding: 5px;
-        border-radius: 5px;
-        color: #00ff00;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-    }
-
     .icon {
         width: 80px;
         height: 80px;
