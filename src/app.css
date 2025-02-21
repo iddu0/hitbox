@@ -101,10 +101,10 @@
 </style>
 
     <span class="jam jam-home"></span>
-    <span>Home</span>
+       <div class="icon"></div>
+ <span>Home</span>
 </div>
 <div class="container">
-    <div class="icon"></div>
     <h1 class="pikl-apptitle">PickleBox</h1>
     <p class="welcome-message">Welcome to Pickle Box</p>
     <p class="announcement">{announcement}</p>
