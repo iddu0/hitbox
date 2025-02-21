@@ -26,30 +26,33 @@
 </script>
 
 <style>
-    :global(body) {
-        background-color: transparent;
-        color: #ffffff;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+ :global(body) {
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .container {
-        width: 90%;
-        max-width: 1200px;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 2px solid #00ff00;
-        border-radius: 15px;
-        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
-    }
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #00ff00;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    margin-top: auto; 
+    margin-bottom: 20px; 
+}
 
     .icon {
         width: 80px;
