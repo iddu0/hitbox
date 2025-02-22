@@ -29,15 +29,19 @@
 
 
 .container {
-    width: 120%;
-    max-width: 1200px;
-    padding: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
+    justify-content: center; 
     align-items: center;
-    border: 2px solid #16A34A;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8); 
+    border: none; 
+    border-radius: 0; 
+    z-index: 1000; 
 }
 
     .icon {
