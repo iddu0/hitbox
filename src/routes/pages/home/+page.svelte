@@ -68,6 +68,9 @@
         box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
         backdrop-filter: blur(10px);
         position: relative;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     .icon {
