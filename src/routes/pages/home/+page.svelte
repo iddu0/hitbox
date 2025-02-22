@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(0, 0, 0, 0.6);
+    background: transparent;
     border: 2px solid #16A34A;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
