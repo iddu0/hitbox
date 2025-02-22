@@ -1,6 +1,6 @@
 <script>
-    import '../../cdn/jam/jam.min.css';
     import { onMount } from 'svelte';
+    import '../../cdn/jam/jam.min.css';
 
     let announcement = "Loading...";
     let timeMessage = "";
@@ -51,18 +51,6 @@
         text-shadow: 0 0 10px #16A34A;
     }
 
-    .left-container {
-        position: fixed;
-        left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-        backdrop-filter: blur(10px);
-        color: white;
-    }
-
     .container {
         position: fixed;
         top: 50%;
@@ -78,6 +66,8 @@
         border: 2px solid #16A34A;
         border-radius: 15px;
         box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+        backdrop-filter: blur(10px);
+        position: relative;
     }
 
     .icon {
@@ -104,14 +94,24 @@
     .announcement {
         font-size: 1.2rem;
         margin-top: 20px;
-        color: #ffcc00;
+        color: #000;
         text-shadow: 0 0 8px #ffcc00;
         font-weight: bold;
     }
 
+    .left-container {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background: transparent;
+        padding: 10px 20px;
+        border-radius: 10px;
+        backdrop-filter: blur(100px);
+    }
+
     .time-message {
         font-size: 1.5rem;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .date {
@@ -123,11 +123,11 @@
 <h1 class="pikl-apptitle"><span class="jam jam-home"></span>Home</h1>
 
 <div class="pickelbox">PickelBox</div>
-<div class="left-container">
-    <p class="time-message">{timeMessage}</p>
-    <p class="date">{date}</p>
-</div>
 <div class="container">
     <p class="welcome-message">Welcome to Pickle Box</p>
     <p class="announcement">{announcement}</p>
+    <div class="left-container">
+        <p class="time-message">{timeMessage}</p>
+        <p class="date">{date}</p>
+    </div>
 </div>
