@@ -76,27 +76,6 @@
         text-shadow: 0 0 8px #ffcc00;
         font-weight: bold;
     }
-
-   
-
-.pikl-apptitle {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #00ff00;
-}
-
-.pikl-apptitle .jam-home {
-    margin-right: 8px;
-    font-size: 1.8rem;
-}
-
-
-
 </style>
 
    <h1 class="pikl-apptitle"><span class="jam jam-home"></span>Home</h1>
