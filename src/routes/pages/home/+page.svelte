@@ -30,20 +30,19 @@
 
 .container {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 800px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background: transparent;
     border: 2px solid #16A34A;
+    border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
-    border-radius: 0;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
     .icon {
