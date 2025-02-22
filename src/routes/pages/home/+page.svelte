@@ -30,19 +30,21 @@
 
 .container {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 800px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.8); 
-    border: none; 
-    border-radius: 0; 
-    z-index: 1000; 
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #16A34A;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
 }
+
 
     .icon {
         width: 80px;
