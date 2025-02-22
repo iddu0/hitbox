@@ -122,8 +122,8 @@
 
 <h1 class="pikl-apptitle"><span class="jam jam-home"></span>Home</h1>
 
-<div class="pickelbox">PickelBox</div>
 <div class="container">
+    <div class="pickelbox">PickelBox</div>
     <p class="welcome-message">Welcome to Pickle Box</p>
     <p class="announcement">{announcement}</p>
     <div class="left-container">
