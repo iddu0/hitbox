@@ -1,6 +1,5 @@
 <script>
     import { onMount } from 'svelte';
-    import '../../cdn/jam/jam.min.css';
 
     let announcement = "Loading...";
     let timeMessage = "";
@@ -99,14 +98,17 @@
         text-align: center;
     }
 
-    .announcement-container {
-        display: inline-block;
-        padding: 10px 15px;
-        border: 2px solid #16A34A;
-        border-radius: 10px;
-        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
-        margin-top: 20px;
-    }
+  .announcement-container {
+    display: inline-block;
+    max-width: 60%; 
+    padding: 10px 15px;
+    border: 2px solid #16A34A;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    margin-top: 20px;
+    text-align: center;
+    word-wrap: break-word; 
+}
 
     .announcement {
         font-size: 1.2rem;
@@ -154,13 +156,11 @@
 
 <h1 class="pikl-apptitle"><span class="jam jam-home"></span> Home</h1>
 
-<!-- Centered PickelBox Title & Welcome Message -->
 <div class="title-container">
     <div class="pickelbox">PickelBox</div>
     <p class="welcome-message">Welcome to PickelBox</p>
 </div>
 
-<!-- Announcement Box with Green Outline -->
 <div class="announcement-container">
     <p class="announcement">{announcement}</p>
 </div>
