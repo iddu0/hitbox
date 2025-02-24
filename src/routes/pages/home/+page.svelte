@@ -121,6 +121,11 @@
         font-size: 1.2rem;
         color: #ffcc00;
     }
+
+	.pikl-apptitle {
+    position: relative; 
+    z-index: 10; 
+	}
 </style>
 
 <h1 class="pikl-apptitle"><span class="jam jam-home"></span>Home</h1>
