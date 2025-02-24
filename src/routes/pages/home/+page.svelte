@@ -33,7 +33,7 @@
             announcement = "Failed to load announcement";
         }
 
-        pulseOutline(); // Start the glow effect
+        pulseOutline(); 
     });
 
     function pulseOutline() {
@@ -101,14 +101,14 @@
 
     .announcement-container {
         display: block;
-        max-width: 60%; /* Restricts width */
-        margin: 20px auto; /* Centers the box */
+        max-width: 60%;
+        margin: 20px auto; 
         padding: 10px 15px;
         border: 2px solid #16A34A;
         border-radius: 10px;
         box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
         text-align: center;
-        word-wrap: break-word; /* Ensures long text breaks properly */
+        word-wrap: break-word; 
     }
 
     .announcement {
@@ -157,13 +157,11 @@
 
 <h1 class="pikl-apptitle"><span class="jam jam-home"></span> Home</h1>
 
-<!-- Centered PickelBox Title & Welcome Message -->
 <div class="title-container">
     <div class="pickelbox">PickelBox</div>
     <p class="welcome-message">Welcome to PickelBox</p>
 </div>
 
-<!-- Announcement Box with Fixed Width -->
 <div class="announcement-container">
     <p class="announcement">{announcement}</p>
 </div>
