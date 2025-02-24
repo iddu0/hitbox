@@ -124,10 +124,7 @@
 
    .pikl-apptitle {
     position: relative; 
-    z-index: 10; 
-    position: absolute;
-    top: -40px; 
-    left: 50%;
+
 	}
 </style>
 
