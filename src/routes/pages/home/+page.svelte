@@ -128,7 +128,6 @@
 	}
 </style>
 
-<h1 class="pikl-apptitle"><span class="jam jam-home"></span>Home</h1>
 
 <div class="container">
 <h1 class="pikl-apptitle"><span class="jam jam-home"></span>Home</h1>
