@@ -126,14 +126,13 @@
     position: relative; 
     z-index: 10; 
     position: absolute;
-    top: -50px; 
+    top: -40px; 
     left: 50%;
 	}
 </style>
 
-
 <div class="container">
-<h1 class="pikl-apptitle"><span class="jam jam-home"></span>Home</h1>
+    <h1 class="pikl-apptitle"><span class="jam jam-home"></span>Home</h1>
     <div class="pickelbox">PickelBox</div>
     <p class="welcome-message">Welcome to Pickle Box</p>
     <p class="announcement">{announcement}</p>
@@ -142,3 +141,4 @@
         <p class="date">{date}</p>
     </div>
 </div>
+
