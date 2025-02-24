@@ -122,9 +122,12 @@
         color: #ffcc00;
     }
 
-	.pikl-apptitle {
+   .pikl-apptitle {
     position: relative; 
     z-index: 10; 
+    position: absolute;
+    top: -50px
+    left: 50%;
 	}
 </style>
 
