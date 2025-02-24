@@ -32,9 +32,27 @@
         } catch (error) {
             announcement = "Failed to load announcement";
         }
+
+        pulseOutline(); // Start the glow effect
     });
 
-   
+    function pulseOutline() {
+        const announcementBox = document.querySelector(".announcement-container");
+        let glow = 0.5;
+        let increasing = true;
+
+        setInterval(() => {
+            if (increasing) {
+                glow += 0.1;
+                if (glow >= 1) increasing = false;
+            } else {
+                glow -= 0.1;
+                if (glow <= 0.5) increasing = true;
+            }
+
+            announcementBox.style.boxShadow = `0 0 15px rgba(0, 255, 0, ${glow})`;
+        }, 200);
+    }
 </script>
 
 <style>
@@ -59,6 +77,14 @@
         pointer-events: none; 
     }
 
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
     .pickelbox {
         font-size: 3rem;
         font-weight: bold;
@@ -66,12 +92,28 @@
         text-shadow: 0 0 10px #16A34A;
     }
 
+    .welcome-message {
+        font-size: 1.5rem;
+        color: white;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .announcement-container {
+        display: inline-block;
+        padding: 10px 15px;
+        border: 2px solid #16A34A;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+        margin-top: 20px;
+    }
+
     .announcement {
         font-size: 1.2rem;
-        margin-top: 20px;
         color: #ffcc00;
         text-shadow: 0 0 8px #ffcc00;
         font-weight: bold;
+        text-align: center;
     }
 
     .left-container {
@@ -92,10 +134,6 @@
         color: #ffcc00;
     }
 
-    .pikl-apptitle {
-        position: relative; 
-    }
-
     button {
         margin-top: 20px;
         padding: 10px;
@@ -112,15 +150,22 @@
     }
 </style>
 
-    <div class="dynamic-border"></div>
+<div class="dynamic-border"></div>
 
 <h1 class="pikl-apptitle"><span class="jam jam-home"></span> Home</h1>
-<div class="pickelbox">PickelBox</div>
-<p class="welcome-message">Welcome to Pickle Box</p>
-<p class="announcement">{announcement}</p>
+
+<!-- Centered PickelBox Title & Welcome Message -->
+<div class="title-container">
+    <div class="pickelbox">PickelBox</div>
+    <p class="welcome-message">Welcome to PickelBox</p>
+</div>
+
+<!-- Announcement Box with Green Outline -->
+<div class="announcement-container">
+    <p class="announcement">{announcement}</p>
+</div>
 
 <div class="left-container">
     <p class="time-message">{timeMessage}</p>
     <p class="date">{date}</p>
 </div>
-
