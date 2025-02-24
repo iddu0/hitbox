@@ -13,3 +13,6 @@ It may not be as good, but it will have the same functions and everything.
 🔗 [Picklebox Live Progress](https://joaawd.github.io/picklebox/client/index.html)
 
 📢 Stay tuned for updates & Please Like and Follow!
+
+-As for now the Pr0xy is down, Since its Old UV, Im installing the new UV, And Fixing/Added All the Pages, 
+Check out the live progress In the Live Progress Link, and Open an issue for a suggestion! IT HELPS
