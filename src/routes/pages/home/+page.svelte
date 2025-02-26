@@ -82,7 +82,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 20px;
+        height: 50vh;
     }
 
     .pickelbox {
@@ -108,10 +108,10 @@
         padding: 10px 15px;
         border: 2px solid #16A34A;
         border-radius: 10px;
-        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
         text-align: center;
         word-wrap: break-word;
-        background: black;
+        background: transparent;
+        box-shadow: none;
     }
 
     .announcement {
@@ -158,8 +158,6 @@
 
 <div class="dynamic-border"></div>
 
-<h1 class="pikl-apptitle"><span class="jam jam-home"></span> Home</h1>
-
 <div class="title-container">
     <div class="pickelbox">PickelBox</div>
     <p class="welcome-message">Welcome to PickelBox</p>
@@ -171,5 +169,5 @@
 </div>
 
 <div class="announcement-container">
-    <p class="announcement">{announcement}</p>
+    <p class="announcement">Announcements: {announcement}</p>
 </div>
