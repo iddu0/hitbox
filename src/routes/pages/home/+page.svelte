@@ -100,15 +100,18 @@
     }
 
     .announcement-container {
-        display: block;
-        max-width: 60%;
-        margin: 20px auto; 
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
         padding: 10px 15px;
         border: 2px solid #16A34A;
         border-radius: 10px;
         box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
         text-align: center;
-        word-wrap: break-word; 
+        word-wrap: break-word;
+        background: black;
     }
 
     .announcement {
@@ -162,11 +165,11 @@
     <p class="welcome-message">Welcome to PickelBox</p>
 </div>
 
-<div class="announcement-container">
-    <p class="announcement">{announcement}</p>
-</div>
-
 <div class="left-container">
     <p class="time-message">{timeMessage}</p>
     <p class="date">{date}</p>
+</div>
+
+<div class="announcement-container">
+    <p class="announcement">{announcement}</p>
 </div>
