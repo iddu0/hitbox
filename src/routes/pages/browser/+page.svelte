@@ -1,5 +1,4 @@
 <script>
-    import '../../cdn/jam/jam.min.css';
     let url = "https://worm-production.up.railway.app";
 </script>
 
