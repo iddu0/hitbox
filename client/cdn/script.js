@@ -1,4 +1,4 @@
-var baseappurl = 'https://picklebox-production.up.railway.app';
+var baseappurl = 'https://picklebox';
 function piklload() {
     return new Promise((resolve,reject)=>{
         var modalbox = document.getElementsByClassName('pikl-maincontainer')[0];
