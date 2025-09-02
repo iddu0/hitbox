@@ -1,4 +1,4 @@
-var baseappurl = 'https://picklebox';
+var baseappurl = 'https://teamhitbox.github.io/hitbox/src/routes/pages';
 function piklload() {
     return new Promise((resolve,reject)=>{
         var modalbox = document.getElementsByClassName('pikl-maincontainer')[0];
