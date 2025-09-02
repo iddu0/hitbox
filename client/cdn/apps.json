@@ -6,7 +6,7 @@
         "url": "/pages/home"
     },
     {
-        "displayname": "News",
+        "displayname": "Blog",
         "status": "running",
         "icon": "jam-newspaper",
         "url": "/pages/news"
