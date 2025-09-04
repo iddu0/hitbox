@@ -99,7 +99,7 @@ function piklload() {
             },2000);
         },500);
 
-        modalbox.innerHTML = `<div class="pikl-taskbar"><div class="pikl-piklicon"><img src="https://teamhitbox.github.io/hitbox/static/img/pickle.svg" width="30px" height="30px"></img></div></div>`;
+        modalbox.innerHTML = `<div class="pikl-taskbar"><div class="pikl-piklicon"><img src="https://teamhitbox.github.io/hitbox/static/img/hitboxnobg.png" width="30px" height="30px"></img></div></div>`;
 
         var jamlib = document.createElement('link');
         jamlib.rel = 'stylesheet';
@@ -209,6 +209,6 @@ async function piklinit() {
     modalbox.classList.add('pikl-maincontainer');
     document.body.appendChild(modalbox);
     await piklload();
-    console.log('PickleHub is loading...');
+    console.log('Hitbox is loading...');
 }
 piklinit();
