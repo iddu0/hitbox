@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALERT!</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #1F2937;
+      color: #22C35D;
+      font-family: sans-serif; 
+    }
+    .container {
+      padding: 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1, p, div {
+      margin: 15px 0;
+    }
+
+    /* button style */
+    .btn {
+      background-color: #22C35D;   /* green */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+    }
+    .btn:hover {
+      background-color: #1AA34A;   /* darker green on hover */
+      transform: scale(1.05);
+    }
+    .btn:active {
+      transform: scale(0.95);      /* press effect */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>⚠ ALERT ⚠</h1>
+    <p>
+      When you want to play a game, please right-click on the game, and then press 
+      <br><b>"Open in new tab"</b><br>as CoolMathGames blocks any of their games from being played 
+      in other websites (like this one).
+    </p>
+    <button class="btn" onclick="window.location.href='https://coolmathgames.com'">
+      ok, let me play games!
+    </button>
+  </div>
+</body>
+</html>
