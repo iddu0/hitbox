@@ -19,7 +19,7 @@ function piklload() {
             var chosen = gifs[Math.floor(Math.random() * gifs.length)];
 
             // put it inside loading div
-            loadingicon.innerHTML = `<img src="${chosen}" alt="loading..." style="max-width:150px;max-height:150px;">`;
+            loadingicon.innerHTML = `<img src="${chosen}" alt="loading..." style="max-width:100%; height:auto; display:block; margin:0 auto;">`;
 
             modalbox.appendChild(loadingicon);
 
