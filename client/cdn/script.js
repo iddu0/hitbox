@@ -10,9 +10,9 @@ function piklload() {
 
             // list of gifs
             var gifs = [
-                "../../static/gif/180.gif",
-                "../../static/gif/360.gif",
-                "../../static/gif/thick360.gif"
+                "https://teamhitbox.github.io/hitbox/static/gif/180.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/360.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/thick360.gif"
             ];
 
             // pick random gif
