@@ -10,15 +10,75 @@ function piklload() {
 
             // list of gifs
             var gifs = [
+                "https://teamhitbox.github.io/hitbox/static/gif/fidgetspinner.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/figure8.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/fivecolumns.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/fiverows.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/float.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/foreverzoom.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/fourcorners.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/fourcornershuffle.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/frontflip.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/gears.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/glitch.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/halfwayhighfive.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/heartbeat.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/horizontalwave.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/horizrotatingcube.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/huerotate.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/infinitehallway.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/infinitescroll.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/infinitesidehallway.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/insidesphere.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/lefttoright.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/lowpolyrotatingsphere.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/peekaboo.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/planets.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/pyramid.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/quilt.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/randomperframe.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/randomrotations.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/righttoleft.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/rocking.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/rotatinghead.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/rotatingsphere.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/snake.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/spiralvanish.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/squishy.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/still.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/swirl.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/tiltedzoom.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/toptobottom.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/trailingleft.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/trailingtop.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/verticalwave.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/wobble.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/wobblyrotatingcube.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/zoom.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/2dtremble.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/5x5.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/10x10.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/ballon.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/blink.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/blur.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/book.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/bottomtotop.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/ccwisespin.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/contentaware.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/cwisespin.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/diagrotatingcube.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/donut.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/dvdbounce.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/errors.gif",
+                "https://teamhitbox.github.io/hitbox/static/gif/explode.gif",
                 "https://teamhitbox.github.io/hitbox/static/gif/180.gif",
                 "https://teamhitbox.github.io/hitbox/static/gif/360.gif",
                 "https://teamhitbox.github.io/hitbox/static/gif/thick360.gif"
             ];
 
-            // pick random gif
+
             var chosen = gifs[Math.floor(Math.random() * gifs.length)];
 
-            // put it inside loading div
             loadingicon.innerHTML = `<img src="${chosen}" alt="loading..." style="max-width:100%; height:auto; display:block; margin:0 auto;">`;
 
             modalbox.appendChild(loadingicon);
