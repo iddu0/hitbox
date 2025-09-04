@@ -24,12 +24,12 @@ function piklload() {
                 },300);
             },2000);
         },500);
-		modalbox.innerHTML = `<div class="pikl-taskbar"><div class="pikl-piklicon"><img src="./cdn/pickle.svg" width="30px" height="30px"></img></div></div>`;
+		modalbox.innerHTML = `<div class="pikl-taskbar"><div class="pikl-piklicon"><img src="https://teamhitbox.github.io/hitbox/static/img/pickle.svg" width="30px" height="30px"></img></div></div>`;
         var jamlib = document.createElement('link');
         jamlib.rel = 'stylesheet';
-        jamlib.href = './cdn/jam/jam.min.css'
+        jamlib.href = 'https://teamhitbox.github.io/hitbox/client/cdn/jam/jam.min.css'
         document.head.appendChild(jamlib);
-        fetch('./cdn/apps.json')
+        fetch('https://teamhitbox.github.io/hitbox/client/cdn/apps.json')
         .then((response) => response.json())
         .then((data) => {
             for (let i = 0; i < data.length; i++) {
