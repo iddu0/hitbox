@@ -13,7 +13,7 @@ It may not be as good, but it will have the same functions (maybe some more!) an
 📢 Please star the repo if you enjoy using Picklebox!
 
 ## Using Hitbox
-There are 2 diffrent ways to use Hitbox. One is adding the Hitbox UI to any website (Reccomended, can be added to any website), and the other way is to use the Hitbox Client in a seperate tab.
+There are 3 diffrent ways to use Hitbox. One is adding a button to inject Hitbox to all websites automatically (Reccomended, can be added to any website), using the Hitbox Client in a seperate tab, and making a Bookmarklet to load Hitbox.
 
 ### Using the Hitbox Bookmarklet:
 
@@ -31,4 +31,13 @@ javascript:(function(){var s=document.createElement('script');s.src='https://tea
 To use the Hitbox client, Simply click [this link](https://teamhitbox.github.io/hitbox/client/)<br>
 Hitbox will open in a new tab, and you can use Hitbox as usual.
 
+### Using the "Auto add a button that Injects Hitbox" Method:
 
+Follow these instructions to automaticlly add the Hitbox Injector button to any website:<br>
+1. Download Tampermonkey [here](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+2. Pin the Tampermonkey extention to your toolbar
+3. Click the Tampermonkey extention -> click Dashboard
+4. Click [here](https://github.com/teamhitbox/hitbox/raw/refs/heads/main/hitbox-tampermonkey.zip) to download Hitbox for Tampermonkey
+5. Hit Utilities -> Import from File
+6. Select the file you just downloaded
+7. All done! When you go to any website, it should show an "Inject Hitbox" Button in the bottom right corner
